@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<title>{{ page.title }} - {{ page.city }}</title>
+
+<meta name="author" content="Lara"/>
+<meta name="description" content="{{ page.title }} - review by Lara"/>
+<meta charset="utf8">
+<meta name="viewport" content="user-scalable=0, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes" /> 
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />  
+<link rel="apple-touch-icon" sizes="144x144" href="http://i.imgur.com/ePxmkUv.jpg?1">
+<link href="/mop.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Delius+Swash+Caps' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+
+<script src="/mop.js"></script>
+
+<body>
+
+  <header id="poster">
+    <img id="bigimg" src="{{page.img1}}">
+  </header>
+
+  <article>
+
+    <div id="overlay">
+      <span id="l">L</span>
+      <span id="keywords">
+        #{{page.keyword1}}, #{{page.keyword2}}, #{{page.keyword3}}
+      </span>
+    </div>
+
+
+    <p id="stars">{{page.rating}}</p>
+    <h1>{{page.title}}</h1>
+
+    <p id="location">{{page.country}}, {{page.city}}. <a target="_" href="{{page.map}}">Map</a>.</p>
+
+    <p id="meta">
+    {{ page.opening }}
+    <span id="contact">
+    {% if page.website %}
+    <a target="_" href="{{page.website}}">website</a>
+    {% endif %}
+    {% if page.contact %}
+    {{page.contact}}
+    {% endif %}
+    </span>
+    </p>
+    <p id="desc">
+    Lara's words: <q>{{page.desc}}</q>
+    </p>
+  </article>
+
+
+  <div id="smallpictures">
+    <img src="{{page.img1}}">
+    <img src="{{page.img2}}">
+    <img src="{{page.img3}}">
+    <img src="{{page.img4}}">
+  </div>
+</body>
