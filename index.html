@@ -21,14 +21,10 @@ title: Paul Rouget
   <ul id="shops">
     {% for post in site.posts limit:100 %}
     <li>
-    <a href="{{post.url}}">
+    <a href="{{post.url}}" class="ashop">
       <img class="thumbnail" src="{{post.img1}}">
-      <div>
-        <p class="title">{{ post.title }}</p>
-        <p class="title-meta">
-        <span class="city">{{ post.city }}</span> - <span class="harth">♡ 13</span>
-        </p>
-      </div>
+      <p class="title">{{ post.title }}</p>
+      <p class="loves">♥ 13</p>
     </a>
     </li>
     {% endfor %}
