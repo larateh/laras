@@ -149,10 +149,13 @@ article {
 }
 
 #banner {
-  background: #111;
   text-align: center;
   padding: 0;
   padding: 10px 0;
+  background-color: #555;
+  border-color: hsla(211,68%,6%,.6);
+  background-image: linear-gradient(hsla(211,68%,6%,.1), hsla(211,68%,6%,.2));
+  box-shadow: 0 1px 3px hsla(211,68%,6%,.5) inset, 0 0 0 1px hsla(209,29%,72%,.1), 0 1px 0 hsla(210,16%,76%,.1);
 }
 
 #banner > h1 {
