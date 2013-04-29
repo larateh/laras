@@ -101,3 +101,29 @@ article {
   }
 }
 
+
+#shops {
+  list-style: none;
+}
+
+#shops .title {
+  font-size: 2em;
+}
+
+#shops > li {
+  margin: 10px 0;
+}
+
+#shops > li > a > * {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#shops > li > a {
+  text-decoration: none;
+}
+
+.thumbnail {
+  width: 80px;
+  border-radius: 5px;
+}
