@@ -66,11 +66,19 @@ header > img {
 
 header {
   text-align: center;
-  background: white;
+  background: rgb(209,201,182);
 }
 
 header > h1 {
+  letter-spacing: -2px;
 }
 
 header > h2 {
+  margin-bottom: 8px;
 }
+
+header > h2 > a {
+  text-decoration: none;
+  border-bottom: 1px dotted grey;
+}
+
