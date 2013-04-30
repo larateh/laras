@@ -8,6 +8,7 @@ window.onload = function() {
   for (var i = 0; i < smallimgs.length; i++) {
     smallimgs[i].onclick = function(src) {
       return function() {
+        bigimg.parentNode.classList.add("big");
         bigimg.src = src;
       };
     }(smallimgs[i].src);
