@@ -3,7 +3,7 @@ html { font-family: 'Quicksand', sans-serif; background: url(wavegrid.png); }
 h1, h2, h3 {font-weight: normal; color:black}
 h2 { font-size: 1em}
 a { color: black!important; }
-body {color: #777;margin: auto; max-width: 500px; padding: 10px}
+body {color: #777;margin: 10px auto; max-width: 500px; padding: 10px}
 img {cursor: pointer;}
 
 header { height: 200px; overflow: hidden; position: relative; margin: -10px -10px 0}
@@ -30,20 +30,15 @@ header > img {
   margin-top: 2px;
 }
 
-#stars {
-  float: right;
-}
-
-#meta, #location {
-  margin: 1em 0;
-}
-
-#contact {
-  color: black;
+#desc:before {
+  content: "&";
+  display: block;
+  text-align: center;
+  margin: 10px 0;
+  color: #777;
 }
 
 #desc {
-  text-align: left;
   font-size: 0.9em;
   color: black;
 }
@@ -51,11 +46,6 @@ header > img {
 #desc > q {
   color: #777;
   font-style: italic;
-}
-
-#meta {
-  text-align: left;
-  font-size: 0.8em;
 }
 
 @media (max-width: 500px) {
@@ -82,5 +72,20 @@ header > h2 {
 header > h2 > a {
   text-decoration: none;
   border-bottom: 1px dotted grey;
+}
+
+#right {
+  float: right;
+  margin-top: -10px;
+  text-align: right;
+}
+
+.hash {
+  opacity: 0.3;
+}
+
+#meta p {
+  margin: 10px 0;
+  font-size: 0.8em;
 }
 
