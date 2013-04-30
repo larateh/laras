@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" /> 
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />  
 <link rel="apple-touch-icon" sizes="144x144" href="http://i.imgur.com/ePxmkUv.jpg?1">
-<link href="../mop.css" rel="stylesheet" type="text/css">
+<link href="../poster.css" rel="stylesheet" type="text/css">
 <link href='http://fonts.googleapis.com/css?family=Delius+Swash+Caps' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
 
@@ -17,53 +17,35 @@
 
 <body>
 
-<div id="banner">
-  <h1>NoYi Coffee</h1>
-</div>
-
-
-  <header id="poster">
+  <header>
+    <h1>NoYi Coffee</h1>
     <img id="bigimg" src="{{page.img1}}">
+    <div id="smallpictures"> <img src="{{page.img1}}"> <img src="{{page.img2}}"> <img src="{{page.img3}}"> <img src="{{page.img4}}"> </div>
   </header>
 
-  <article>
+  <p id="stars">{{page.rating}}</p>
+  <h1>{{page.title}}</h1>
 
-    <div id="overlay">
-      <span id="l">L</span>
-      <span id="keywords">
-        #{{page.keyword1}}, #{{page.keyword2}}, #{{page.keyword3}}
-      </span>
-    </div>
+  <span id="keywords">#{{page.keyword1}}, #{{page.keyword2}}, #{{page.keyword3}}</span>
 
 
-    <p id="stars">{{page.rating}}</p>
-    <h1>{{page.title}}</h1>
+  <p id="location">{{page.country}}, {{page.city}}. <a target="_" href="{{page.map}}">Map</a>.</p>
 
-    <p id="location">{{page.country}}, {{page.city}}. <a target="_" href="{{page.map}}">Map</a>.</p>
-
-    <p id="meta">
-    {{ page.opening }}
-    <span id="contact">
+  <p id="meta">
+  {{ page.opening }}
+  <span id="contact">
     {% if page.website %}
     <a target="_" href="{{page.website}}">website</a>
     {% endif %}
     {% if page.contact %}
     {{page.contact}}
     {% endif %}
-    </span>
-    </p>
-    <p id="desc">
-    Lara's words: <q>{{content}}</q>
-    </p>
-  </article>
+  </span>
+  </p>
+  <p id="desc">
+  Lara's words: <q>{{content}}</q>
+  </p>
 
-
-  <div id="smallpictures">
-    <img src="{{page.img1}}">
-    <img src="{{page.img2}}">
-    <img src="{{page.img3}}">
-    <img src="{{page.img4}}">
-  </div>
 </body>
 
 

@@ -1,6 +1,5 @@
 ---
 layout: nil
-title: Paul Rouget
 ---
 <!DOCTYPE html>
 
@@ -25,6 +24,7 @@ title: Paul Rouget
 <article id="home">
   <ul id="shops">
     {% for post in site.posts limit:100 %}
+    {% if post.index == "taipei" %}
     <li>
     <a href="{{post.url}}" class="ashop">
       <img class="thumbnail" src="{{post.img1}}">
@@ -32,6 +32,7 @@ title: Paul Rouget
       <p class="loves">♥ 13</p>
     </a>
     </li>
+    {% endif %}
     {% endfor %}
   </ul>
 </article>
