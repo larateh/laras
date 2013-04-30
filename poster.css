@@ -3,7 +3,7 @@ html { font-family: 'Quicksand', sans-serif; background: url(wavegrid.png); }
 h1, h2, h3 {font-weight: normal; color:black}
 h2 { font-size: 1em}
 a { color: black!important; }
-body {color: #777;margin: 20px auto 0; max-width: 500px;}
+body {color: #777;margin: auto; max-width: 500px; padding: 10px}
 img {cursor: pointer;}
 
 header { height: 200px; overflow: hidden; position: relative}
@@ -64,13 +64,17 @@ header > img {
   }
 }
 
-header > h1 {
-  text-align: center;
-  padding: 0;
-  padding: 10px 0;
+header {
   background-color: #555;
-  border-color: hsla(211,68%,6%,.6);
-  background-image: linear-gradient(hsla(211,68%,6%,.1), hsla(211,68%,6%,.2));
-  box-shadow: 0 1px 3px hsla(211,68%,6%,.5) inset, 0 0 0 1px hsla(209,29%,72%,.1), 0 1px 0 hsla(210,16%,76%,.1);
-  color: #CCC;
+}
+
+header > h1 {
+  color: white;
+  margin: 10px 0 0 10px;
+}
+
+header > h2 {
+  float: right;
+  color: white;
+  margin: 0 10px 10px 0;
 }
