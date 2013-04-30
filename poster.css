@@ -65,16 +65,12 @@ header > img {
 }
 
 header {
-  background-color: #555;
+  text-align: center;
+  background: white;
 }
 
 header > h1 {
-  color: white;
-  margin: 10px 0 0 10px;
 }
 
 header > h2 {
-  float: right;
-  color: white;
-  margin: 0 10px 10px 0;
 }
