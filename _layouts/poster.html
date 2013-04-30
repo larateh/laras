@@ -25,11 +25,9 @@
   </header>
 
   <section id="meta">
-    <div id="right">
-      <p id="stars">{{page.rating}}</p>
-      <p id="location">{{page.country}}, {{page.city}}.</p>
-      <p id="map"> <a target="_" href="{{page.map}}">Map</a></p>
-    </div>
+      <p class="right" id="stars">{{page.rating}}</p>
+      <p class="right" id="location">{{page.country}}, {{page.city}}.</p>
+      <p class="right" id="map"> <a target="_" href="{{page.map}}">Map</a></p>
     <p id="keywords"><span class="hash">#</span>{{page.keyword1}} <span class="hash">#</span>{{page.keyword2}} <span class="hash">#</span>{{page.keyword3}}</p>
     <p id="contact">
       {% if page.website %}

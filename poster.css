@@ -74,9 +74,10 @@ header > h2 > a {
   border-bottom: 1px dotted grey;
 }
 
-#right {
+.right {
   float: right;
   text-align: right;
+  clear: both;
 }
 
 .hash {
