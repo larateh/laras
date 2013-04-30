@@ -6,7 +6,7 @@ a { color: black!important; }
 body {color: #777;margin: auto; max-width: 500px; padding: 10px}
 img {cursor: pointer;}
 
-header { height: 200px; overflow: hidden; position: relative}
+header { height: 200px; overflow: hidden; position: relative; margin: -10px -10px 0}
 header.big { height: auto; }
 
 #smallpictures {
