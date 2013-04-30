@@ -71,10 +71,12 @@ header {
 
 header > h1 {
   letter-spacing: -2px;
+  color: #444;
 }
 
 header > h2 {
   margin-bottom: 8px;
+  color: #444;
 }
 
 header > h2 > a {
