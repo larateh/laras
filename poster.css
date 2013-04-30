@@ -76,7 +76,6 @@ header > h2 > a {
 
 #right {
   float: right;
-  margin-top: -10px;
   text-align: right;
 }
 
@@ -85,7 +84,7 @@ header > h2 > a {
 }
 
 #meta p {
-  margin: 10px 0;
+  line-height: 2.4em;
   font-size: 0.8em;
 }
 
