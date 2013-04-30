@@ -31,7 +31,6 @@
       <p id="map"> <a target="_" href="{{page.map}}">Map</a></p>
     </div>
     <p id="keywords"><span class="hash">#</span>{{page.keyword1}} <span class="hash">#</span>{{page.keyword2}} <span class="hash">#</span>{{page.keyword3}}</p>
-    <p id="opening">{{ page.opening }}</p>
     <p id="contact">
       {% if page.website %}
       <a target="_" href="{{page.website}}">website</a>
@@ -40,6 +39,7 @@
       {{page.contact}}
       {% endif %}
     </p>
+    <p id="opening">{{ page.opening }}</p>
   </section>
   <p id="desc">
   Noyi's words: <q>{{content}}</q>
